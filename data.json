@@ -1,0 +1,66 @@
+{
+    "questions": [
+        {
+            "id": 0,
+            "step": 1,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "options": [
+                {
+                    "answer": "Option A",
+                    "id": 1
+                },
+                {
+                    "answer": "Option B",
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "step": 1,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "options": [
+                {
+                    "answer": "Option A",
+                    "id": 3
+                },
+                {
+                    "answer": "Option B",
+                    "id": 4
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "step": 2,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "options": [
+                {
+                    "answer": "Option A",
+                    "resultId": 1
+                },
+                {
+                    "answer": "Option B",
+                    "resultId": 0
+                }
+            ]
+        }
+    ],
+    "results": [
+        {
+            "id": 0,
+            "name": "Water Flea",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus vehicula urna, vitae commodo nunc faucibus vel. Proin sed convallis ipsum. Curabitur suscipit consequat placerat. Quisque auctor erat sollicitudin, sagittis felis a, molestie ipsum. Aenean bibendum ornare nisl vel convallis."
+        },
+        {
+            "id": 1,
+            "name": "Water Flea",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus vehicula urna, vitae commodo nunc faucibus vel. Proin sed convallis ipsum. Curabitur suscipit consequat placerat. Quisque auctor erat sollicitudin, sagittis felis a, molestie ipsum. Aenean bibendum ornare nisl vel convallis."
+        },
+        {
+            "id": 2,
+            "name": "Water Flea",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus vehicula urna, vitae commodo nunc faucibus vel. Proin sed convallis ipsum. Curabitur suscipit consequat placerat. Quisque auctor erat sollicitudin, sagittis felis a, molestie ipsum. Aenean bibendum ornare nisl vel convallis."
+        }
+    ]
+}

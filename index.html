@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personality Quiz - Fairmount Water Works</title>
+	<meta name="viewport" content="target-densitydpi=device-dpi, 
+                                   width=device-width, 
+                                   initial-scale=1.0, 
+                                   minimum-scale=1.0, 
+                                   maximum-scale=1.0, 
+                                   minimal-ui, 
+                                   user-scalable=no" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+
+    <link href="./dist/css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <script id="result-template" type="text/x-jQuery-tmpl">
+        <h2>Your Match Made in the River</h2>
+        <h1>${name}</h1>
+        <p>${body}</p>
+        <button class="back-to-start">Back to Start</button>
+    </script>
+
+    <script id="option-template" type="text/x-jQuery-tmpl">
+        <li 
+            {{if id}} data-next="${id}" {{/if}}
+            {{if resultId}} data-result="${resultId}" {{/if}}
+            >${answer}</li>
+    </script>
+
+    <script id="quiz-template" type="text/x-jQuery-tmpl">
+        <div class="question">${title}</div>
+        <ul id="options"></ul>
+
+        <div class="progress">Question <span class="progress-current">${step}</span> of <span class="progress-total">7</span></div>
+    </script>
+
+    <script src="./js/lib/jquery-1.11.3.min.js"></script>
+    <script src="./js/lib/jquery.loadTemplate.min.js"></script>
+    <script src="./js/lib/createjs-2015.11.26.min.js"></script>
+    
+    <script src="./js/controllers/utilities.js"></script>
+    <script src="./js/controllers/quiz.js"></script>
+    <script src="./js/controllers/result.js"></script>
+    <script src="./js/app.js"></script>
+    
+    <div id="gui">
+        <div class="home-button"></div>
+        <div class="logo"></div>
+    </div>
+    <div id="content">
+        <div id="introduction" class="fade in">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare lacinia tortor eu feugiat.</p>
+            <button class="start-quiz">Take the Quiz</button>
+        </div>
+        <div id="questions"></div>
+        <div id="calculating" class="fade">
+            <p>Calculating Your River Character</p>
+        </div>
+        <div id="results" class="fade"></div>
+    </div>
+    <div id="animation"></div>
+    <div id="water"></div>
+</body>
+</html>
