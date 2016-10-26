@@ -30,7 +30,7 @@
     </script>
 
     <script id="quiz-template" type="text/x-jQuery-tmpl">
-        <div class="question">${title}</div>
+        <div class="question">${text}</div>
         <ul id="options"></ul>
 
         <div class="progress">Question <span class="progress-current">${step}</span> of <span class="progress-total">7</span></div>
@@ -41,13 +41,14 @@
     <script src="./js/lib/createjs-2015.11.26.min.js"></script>
     
     <script src="./js/controllers/utilities.js"></script>
-    <script src="./js/controllers/quiz.js"></script>
+    <script src="./js/controllers/navigation.js"></script>
+    <script src="./js/controllers/questions.js"></script>
     <script src="./js/controllers/result.js"></script>
     <script src="./js/app.js"></script>
     
     <div id="gui">
-        <div class="home-button"></div>
-        <div class="logo"></div>
+        <div class="home-button">Home</div>
+        <div class="logo">Which River Character Are You?</div>
     </div>
     <div id="content">
         <div id="introduction" class="fade in">

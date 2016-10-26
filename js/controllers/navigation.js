@@ -5,7 +5,7 @@ Navigation = (function() {
     
     var bindEvents = function() {
 
-    }
+    }    
 
     return {
         init: init

@@ -3,11 +3,21 @@ Questions = (function() {
         bindEvents();
     }
     
-    var bindEvents = function() {
+    var buildQuestions = function() {
 
+    	$('#quiz-template').tmpl(data.questions[0]).appendTo('#questions');
+    	buildOptions();
     }
+
+    var buildOptions = function() {
+    	$('#option-template').tmpl(data.questions[0].options).appendTo('#options');
+    }
+
+    var bindEvents = function() {}
 
     return {
-        init: init
+        init: init,
+        buildQuestions: buildQuestions
     }
+
 })();

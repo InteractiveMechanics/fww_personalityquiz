@@ -16,10 +16,20 @@ Utilities = (function() {
     }
     var bindEvents = function() {
         $(document).on('click tap', resetTimeout);
+        $(document).on('click tap', '.start-quiz', closeAttract);
     }
     var resetInteractive = function() {
         // TODO: Reset back to start
     }
+
+    var closeAttract = function() {
+        $attract = $('#introduction');
+        if (!$attract.hasClass('hidden')) {
+            $attract.addClass('hidden').removeClass('in');
+            Questions.buildQuestions();
+        }
+    }
+
 
     return {
         init: init,

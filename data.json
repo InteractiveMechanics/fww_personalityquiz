@@ -3,7 +3,7 @@
         {
             "id": 0,
             "step": 1,
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "text": "This is the first question, okay?",
             "options": [
                 {
                     "answer": "Option A",
