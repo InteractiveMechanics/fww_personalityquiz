@@ -17,15 +17,15 @@
         },
         {
             "id": 1,
-            "step": 1,
+            "step": 2,
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
             "options": [
                 {
-                    "answer": "Option A",
+                    "answer": "Option C",
                     "id": 3
                 },
                 {
-                    "answer": "Option B",
+                    "answer": "Option D",
                     "id": 4
                 }
             ]
@@ -36,15 +36,31 @@
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
             "options": [
                 {
-                    "answer": "Option A",
+                    "answer": "Option E",
+                    "id": 5
+                },
+                {
+                    "answer": "Option F",
+                    "resultId": 6
+                }
+            ]
+        },
+         {
+            "id": 3,
+            "step": 3,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+            "options": [
+                {
+                    "answer": "Option G",
                     "resultId": 1
                 },
                 {
-                    "answer": "Option B",
+                    "answer": "Option H",
                     "resultId": 0
                 }
             ]
         }
+
     ],
     "results": [
         {

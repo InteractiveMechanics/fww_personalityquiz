@@ -2,6 +2,8 @@
 	position: absolute;
 	bottom: 0px;
 	width: 100vw;
+	z-index: 1;
+	//position: relative;
 	&:before {
 		content: "";
 	  	position: absolute;
@@ -13,5 +15,6 @@
     	background-size: 68px $waterheight;
     	background-image: radial-gradient(circle at 34px -9px, transparent 34px, $watercolor1 36px, $watercolor2);
     	animation: slidein 2.5s infinite alternate;
+    	z-index: -1;
 	}
 }

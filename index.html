@@ -23,10 +23,9 @@
     </script>
 
     <script id="option-template" type="text/x-jQuery-tmpl">
-        <li 
-            {{if id}} data-next="${id}" {{/if}}
-            {{if resultId}} data-result="${resultId}" {{/if}}
-            ><button class="answer-btn">${answer}</button></li>
+        <li
+        ><button class="answer-btn"  {{if id}} data-next="${id}" {{/if}}
+            {{if resultId}} data-result="${resultId}" {{/if}}>${answer}</button></li>
     </script>
 
     <script id="quiz-template" type="text/x-jQuery-tmpl">
@@ -62,6 +61,6 @@
         <div id="results" class="fade"></div>
     </div>
     <div id="animation"></div>
-    <div id="water" data-water-level="1"></div>
+    <div id="water" data-water-level="0"></div>
 </body>
 </html>

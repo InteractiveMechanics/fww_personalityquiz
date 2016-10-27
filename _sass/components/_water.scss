@@ -1,22 +1,22 @@
 #water[data-water-level="0"] {
-	@include water(10vh, $blue, $blue);
+	@include water(15vh, $blue, $blue);
 }
 
 
 #water[data-water-level="1"] {
-	@include water(15vh, $blue, $blue);
+	@include water(30vh, $blue, $blue);
 }
 
 #water[data-water-level="2"] {
-	@include water(30vh, $transparent-blue, $dark-blue);
+	@include water(45vh, $transparent-blue, $dark-blue);
 }
 
 #water[data-water-level="3"] {
-	@include water(50vh, $transparent-blue, $dark-blue);
+	@include water(60vh, $transparent-blue, $dark-blue);
 }
 
 #water[data-water-level="4"] {
-	@include water(70vh, $transparent-blue, $dark-blue);
+	@include water(75vh, $transparent-blue, $dark-blue);
 }
 
 #water[data-water-level="5"] {

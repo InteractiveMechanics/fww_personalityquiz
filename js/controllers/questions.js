@@ -3,34 +3,51 @@ Questions = (function() {
         bindEvents();
     }
     
-    var buildQuestions = function() {
+    var buildQuestions = function(id) {
 
+        
+        if (id == null) {
+    	   $('#quiz-template').tmpl(data.questions[0]).appendTo('#questions');
+           buildOptions(0);
+           adjustWaterLevel(0);
+        } else {
+           clearQuiz();
+ 
+            $('#quiz-template').tmpl(data.questions[id]).appendTo('#questions'); 
 
-
-    	$('#quiz-template').tmpl(data.questions[2]).appendTo('#questions');
-    	
-        buildOptions();
-
-        alert(data.questions[2].step);
-
-        if (data.questions[2].step == 1) {
-            $('#water').attr('data-water-level', 1);
-        } else if (data.questions[2].step == 2) {
-            $('#water').attr('data-water-level', 2);
-        } else if (data.questions[2].step == 3) {
-            $('#water').attr('data-water-level', 3);
+            buildOptions(id);
+            adjustWaterLevel(id);  
         }
     }
 
-    var buildOptions = function() {
-    	$('#option-template').tmpl(data.questions[0].options).appendTo('#options');
+    var clearQuiz = function() {
+        $('#questions').html('');
+    }
+
+    var buildOptions = function(id) {
+    	$('#option-template').tmpl(data.questions[id].options).appendTo('#options');
     }
 
     var nextQuestion = function() {
-
+        if ($('.answer-btn').attr('data-next')) {
+            var id = $(this).attr('data-next');
+            buildQuestions(id);
+        } else {
+            //Results.buildResults
+        }
     }
 
-    var bindEvents = function() {}
+    var adjustWaterLevel = function(id) {
+        $('#water').attr('data-water-level', id);
+        if (id > 2) {
+            $('.answer-btn').css('color', '#ffffff').css('z-index', '99');
+        }
+    }
+
+
+    var bindEvents = function() {
+        $(document).on('click tap', '.answer-btn', nextQuestion);
+    }
 
     return {
         init: init,
