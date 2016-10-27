@@ -1,21 +1,26 @@
-#water {
-	position: absolute;
-	bottom: 0px;
-	width: 100vw;
-	height: 50px;
-	background: $blue;  //linear-gradient(rgba(103, 166, 216, 0.5), rgba(53, 93, 165, 0.9))
-	&:before {
-		content: "";
-	  	position: absolute;
-	  	left: 0;
-	  	bottom: 0;
-	  	right: 0;
-	  	background-repeat: repeat-x;
-    	height: 100px;
-    	background-size: 68px 50px;
-    	background-image: radial-gradient(circle at 34px -9px, transparent 34px, $blue 33px);
-    	animation: slidein 2.5s infinite alternate;
-	}
+#water[data-water-level="0"] {
+	@include water(10vh, $blue, $blue);
+}
+
+
+#water[data-water-level="1"] {
+	@include water(15vh, $blue, $blue);
+}
+
+#water[data-water-level="2"] {
+	@include water(30vh, $transparent-blue, $dark-blue);
+}
+
+#water[data-water-level="3"] {
+	@include water(50vh, $transparent-blue, $dark-blue);
+}
+
+#water[data-water-level="4"] {
+	@include water(70vh, $transparent-blue, $dark-blue);
+}
+
+#water[data-water-level="5"] {
+	@include water(90vh, $transparent-blue, $dark-blue);
 }
 
 @keyframes slidein {

@@ -72,22 +72,100 @@ body {
   width: 200px;
   font-size: 2em; }
 
-#water {
+#water[data-water-level="0"] {
   position: absolute;
   bottom: 0px;
-  width: 100vw;
-  height: 50px;
-  background: #67a6d8; }
-  #water:before {
+  width: 100vw; }
+  #water[data-water-level="0"]:before {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
     background-repeat: repeat-x;
-    height: 100px;
-    background-size: 68px 50px;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, #67a6d8 33px);
+    height: 10vh;
+    background-size: 68px 10vh;
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, #67a6d8 36px, #67a6d8);
+    animation: slidein 2.5s infinite alternate; }
+
+#water[data-water-level="1"] {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw; }
+  #water[data-water-level="1"]:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    height: 15vh;
+    background-size: 68px 15vh;
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, #67a6d8 36px, #67a6d8);
+    animation: slidein 2.5s infinite alternate; }
+
+#water[data-water-level="2"] {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw; }
+  #water[data-water-level="2"]:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    height: 30vh;
+    background-size: 68px 30vh;
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #355da5);
+    animation: slidein 2.5s infinite alternate; }
+
+#water[data-water-level="3"] {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw; }
+  #water[data-water-level="3"]:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    height: 50vh;
+    background-size: 68px 50vh;
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #355da5);
+    animation: slidein 2.5s infinite alternate; }
+
+#water[data-water-level="4"] {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw; }
+  #water[data-water-level="4"]:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    height: 70vh;
+    background-size: 68px 70vh;
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #355da5);
+    animation: slidein 2.5s infinite alternate; }
+
+#water[data-water-level="5"] {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw; }
+  #water[data-water-level="5"]:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    height: 90vh;
+    background-size: 68px 90vh;
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #355da5);
     animation: slidein 2.5s infinite alternate; }
 
 @keyframes slidein {
@@ -106,12 +184,16 @@ body {
 #options {
   list-style: none;
   padding-left: 0;
-  text-align: center;
-  color: #67a6d8;
-  text-transform: uppercase;
-  font-size: 2em; }
+  text-align: center; }
   #options li:first-of-type {
     margin-bottom: 1.25em; }
+
+.answer-btn {
+  border: none;
+  background: none;
+  color: #67a6d8;
+  text-transform: uppercase;
+  font-size: 2.3em; }
 
 .progress {
   position: absolute;

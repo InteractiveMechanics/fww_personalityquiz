@@ -1,0 +1,17 @@
+@mixin water($waterheight, $watercolor1, $watercolor2) {
+	position: absolute;
+	bottom: 0px;
+	width: 100vw;
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	left: 0;
+	  	bottom: 0;
+	  	right: 0;
+	  	background-repeat: repeat-x;
+    	height: $waterheight; //default: 100px
+    	background-size: 68px $waterheight;
+    	background-image: radial-gradient(circle at 34px -9px, transparent 34px, $watercolor1 36px, $watercolor2);
+    	animation: slidein 2.5s infinite alternate;
+	}
+}
