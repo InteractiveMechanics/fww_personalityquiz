@@ -4,23 +4,23 @@
 
 
 #water[data-water-level="1"] {
-	@include water(30vh, $blue, $blue);
+	@include water(30vh, $medium-blue, $darker-blue);
 }
 
 #water[data-water-level="2"] {
-	@include water(45vh, $transparent-blue, $dark-blue);
+	@include water(45vh, $medium-blue, $darker-blue);
 }
 
 #water[data-water-level="3"] {
-	@include water(60vh, $transparent-blue, $dark-blue);
+	@include water(60vh, $medium-blue, $darker-blue);
 }
 
 #water[data-water-level="4"] {
-	@include water(75vh, $transparent-blue, $dark-blue);
+	@include water(75vh, $transparent-blue, $darker-blue);
 }
 
 #water[data-water-level="5"] {
-	@include water(90vh, $transparent-blue, $dark-blue);
+	@include water(90vh, $transparent-blue, $darker-blue);
 }
 
 @keyframes slidein {

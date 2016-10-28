@@ -19,7 +19,7 @@
         <h2>Your Match Made in the River</h2>
         <h1>${name}</h1>
         <p>${body}</p>
-        <button class="back-to-start">Back to Start</button>
+        <button class="back-to-start">Back to Start <img src="/assets/images/icon-arrow-white.svg" alt="arrow"></button>
     </script>
 
     <script id="option-template" type="text/x-jQuery-tmpl">
@@ -46,17 +46,34 @@
     <script src="./js/app.js"></script>
     
     <div id="gui">
-        <div class="home-button">Home</div>
-        <div class="logo">Which River Character Are You?</div>
+        <div class="home-button fade">
+            <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+             x="0px" y="0px" width="49.1px" height="49.1px" viewBox="0 0 49.1 49.1" enable-background="new 0 0 49.1 49.1"
+             xml:space="preserve">
+            <defs>
+            </defs>
+            <g>
+                <g>
+                    <g>
+                        <path fill="#FFFFFF" d="M37.3,24L25.6,12.4c-0.6-0.6-1.6-0.6-2.2,0L11.8,24c-0.6,0.6-0.4,1.1,0.5,1.1h2.4v8.9
+                            c0,0.6,0,1.2,1.2,1.2h5.6v-9h5.9v9h5.9c0.9,0,0.9-0.5,0.9-1.2v-8.9h2.4C37.6,25.1,37.9,24.6,37.3,24z"/>
+                    </g>
+                    <circle fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" cx="24.6" cy="24.6" r="23.6"/>
+                </g>
+            </g>
+            </svg>
+        </div>
+        <div class="logo"><img src="/assets/images/logo.svg" alt="logo"></div>
     </div>
     <div id="content">
         <div id="introduction" class="fade in">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare lacinia tortor eu feugiat.</p>
-            <button class="start-quiz">Take the Quiz</button>
+            <button class="start-quiz">Take the Quiz <img src="/assets/images/icon-arrow-blue.svg" alt="arrow"></button>
         </div>
         <div id="questions"></div>
         <div id="calculating" class="fade">
-            <p>Calculating Your River Character</p>
+            <h2>Calculating Your River Character</h2>
         </div>
         <div id="results" class="fade"></div>
     </div>

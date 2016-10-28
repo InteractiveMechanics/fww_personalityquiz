@@ -17,22 +17,35 @@ Utilities = (function() {
     var bindEvents = function() {
         $(document).on('click tap', resetTimeout);
         $(document).on('click tap', '.start-quiz', closeAttract);
+        $(document).on('click tap', '.home-button', resetInteractive);
     }
     var resetInteractive = function() {
         // TODO: Reset back to start
+        $attract = $('#introduction');
+        if ($attract.hasClass('hidden')) {
+            $attract.removeClass('hidden').removeClass('fade').addClass('in');
+            $('.home-button').addClass('fade').removeClass('in');
+            Questions.clearQuiz();
+            Questions.resetWaterLevel();
+            Result.clearCalculate();
+            Result.clearResults();
+        }
     }
 
     var closeAttract = function() {
         $attract = $('#introduction');
         if (!$attract.hasClass('hidden')) {
             $attract.addClass('hidden').removeClass('in');
+            $('.home-button').removeClass('fade').addClass('in');
             Questions.buildQuestions();
+
         }
     }
 
 
     return {
         init: init,
-        resetTimeout: resetTimeout
+        resetTimeout: resetTimeout,
+        resetInteractive: resetInteractive
     }
 })();

@@ -7,6 +7,7 @@
 	font-size: 2em;
 	//font-weight: 300;
 	margin-bottom: 30px;
+    position: relative;
 }
 
 #options {
@@ -43,4 +44,15 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
+}
+
+#calculating {
+    font-family: 'TradeGothic LT CondEighteen';
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    width: 50%;
+    margin: 200px auto;
 }

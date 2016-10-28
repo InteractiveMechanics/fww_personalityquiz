@@ -1,0 +1,27 @@
+#results {
+	position: relative;
+	color: #ffffff;
+	text-align: center;
+	h1 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	p {
+		text-align: left;
+	}
+	button {
+		border: none;
+		background: none;
+		color: #ffffff;
+		text-transform: uppercase;
+		font-size: 1.7em;
+		img {
+		padding-left: 10px;
+		height: 21px;
+		}
+	}
+}
+
+#results.in {
+	z-index: 2;
+}

@@ -33,7 +33,10 @@ Questions = (function() {
             var id = $(this).attr('data-next');
             buildQuestions(id);
         } else {
-            //Results.buildResults
+            var id = $(this).attr('data-result');
+            clearQuiz();
+            Result.calculateResults();
+            setTimeout(function() { Result.buildResults(id); }, 2500);
         }
     }
 
@@ -42,6 +45,13 @@ Questions = (function() {
         if (id > 2) {
             $('.answer-btn').css('color', '#ffffff').css('z-index', '99');
         }
+        if (id > 3) {
+            $('.question').css('color', '#ffffff').css('z-index', '99');
+        }
+    }
+
+    var resetWaterLevel = function() {
+        $('#water').attr('data-water-level', 0);
     }
 
 
@@ -51,7 +61,9 @@ Questions = (function() {
 
     return {
         init: init,
-        buildQuestions: buildQuestions
+        buildQuestions: buildQuestions,
+        clearQuiz: clearQuiz,
+        resetWaterLevel: resetWaterLevel
     }
 
 })();
