@@ -35,7 +35,11 @@ Result = (function() {
     }
 
     var buildResults = function(id) {
+        if (id == null) {
+            $('#result-template').tmpl(data.results[0]).appendTo('#results');
+        } else {
     	$('#result-template').tmpl(data.results[id]).appendTo('#results');
+        }
     	$('#results').removeClass('fade').addClass('in');
    	}
 
