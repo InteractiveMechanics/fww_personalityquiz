@@ -42,6 +42,7 @@ Questions = (function() {
 
     var adjustWaterLevel = function(id) {
         $('#water').attr('data-water-level', id);
+        $('#bubbles').attr('data-bubble-height', id);
         if (id > 2) {
             $('.answer-btn').css('color', '#ffffff').css('z-index', '99');
         }

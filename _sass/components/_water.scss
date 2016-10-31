@@ -1,3 +1,5 @@
+// Water Levels
+
 #water[data-water-level="0"] {
 	@include water(15vh, $blue, $blue);
 }
@@ -33,4 +35,124 @@
 		left: -40px;
 		width: 110%;
 	}
+}
+
+// Bubbles
+
+#bubbles {
+	position: relative;
+}
+
+#bubbles[data-bubble-height="0"] {
+	height: 15vh;
+}
+
+#bubbles[data-bubble-height="1"] {
+	height: 30vh;
+}
+
+#bubbles[data-bubble-height="2"] {
+	height: 45vh;
+}
+
+
+#bubbles[data-bubble-height="3"] {
+	height: 60vh;
+}
+
+#bubbles[data-bubble-height="4"] {
+	height: 75vh;
+}
+
+#bubbles[data-bubble-height="5"] {
+	height: 90vh;
+}
+
+.bubble {
+    width: 30px;
+    height: 30px;
+    background: rgba(250, 250, 250, 0.5);
+    border-radius: 150px;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    position: absolute;
+}
+
+
+.x1 {
+    @include bubble(10px, 0.5, 14s, 2s);
+}
+
+.x2 {
+	@include bubble(30px, 0.7, 10s, 4s);
+}
+
+.x3 {
+	@include bubble(40px, 0.3, 18s, 3s);
+}
+
+.x4 {
+	@include bubble(150px, 0.6, 12s, 5s);
+}
+
+.x5 {
+	@include bubble(175px, 0.8, 8s, 4s);
+}
+
+.x6 {
+	@include bubble(190px, 0.4, 12.5s, 3s);
+}
+
+.x7 {
+	@include bubble(210px, 0.2, 20s, 3s);
+}
+
+.x8 {
+	@include bubble(500px, 0.4, 14s, 4s);
+}
+
+.x9 {
+	@include bubble(530px, 0.6, 8s, 5s);
+}
+
+.x10 {
+	@include bubble(550px, 0.3, 18s, 6s);
+}
+
+.x11 {
+	@include bubble(650px, 0.9, 8s, 5s);
+}
+
+.x12 {
+	@include bubble(675px, 0.6, 10s, 4s);
+}
+
+.x13 {
+	@include bubble(700px, 0.3, 20s, 6s);
+}
+
+.x14 {
+	@include bubble(725px, 0.5, 12s, 6s);
+}
+
+
+
+@keyframes moveclouds { 
+    0% { 
+        bottom: -20px;
+        opacity: 0.5;
+    }
+    100% { 
+        bottom: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left: 35px;
+    }
 }

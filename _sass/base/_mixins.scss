@@ -18,3 +18,13 @@
     	z-index: -1;
 	}
 }
+
+@mixin bubble($left, $scale, $moveclouds, $sideways) {
+	left: $left;
+	-webkit-transform: scale($scale);
+    -moz-transform: scale($scale);
+    transform: scale($scale);
+    -webkit-animation: moveclouds $moveclouds linear infinite, sideWays $sideways ease-in-out infinite alternate;
+    -moz-animation: moveclouds $moveclouds linear infinite, sideWays $sideways ease-in-out infinite alternate;
+    -o-animation: moveclouds $moveclouds linear infinite, sideWays $sideways ease-in-out infinite alternate;
+}
