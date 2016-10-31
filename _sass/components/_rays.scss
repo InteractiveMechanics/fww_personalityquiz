@@ -37,6 +37,7 @@ div.ray {
     border-bottom: 40px solid transparent;
     border-left: 600px solid rgba(220, 220, 220, 0.20);
     filter: blur(7px);
+    z-index: -1;
 }
 
 
