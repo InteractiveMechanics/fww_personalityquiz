@@ -43,6 +43,7 @@ Questions = (function() {
     var adjustWaterLevel = function(id) {
         $('#water').attr('data-water-level', id);
         $('#bubbles').attr('data-bubble-height', id);
+        $('.raybase').attr('data-raybase-position', id);
         if (id > 2) {
             $('.answer-btn').css('color', '#ffffff').css('z-index', '99');
         }
@@ -53,6 +54,8 @@ Questions = (function() {
 
     var resetWaterLevel = function() {
         $('#water').attr('data-water-level', 0);
+        $('#bubbles').attr('data-bubble-height', 0);
+        $('.raybase').attr('data-raybase-position', 0);
     }
 
 
