@@ -114,8 +114,8 @@ body {
     bottom: 0;
     right: 0;
     background-repeat: repeat-x;
-    height: 30vh;
-    background-size: 68px 30vh;
+    height: 25vh;
+    background-size: 68px 25vh;
     background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(58, 103, 168, 0.5) 36px, #202c5c);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
@@ -132,8 +132,8 @@ body {
     bottom: 0;
     right: 0;
     background-repeat: repeat-x;
-    height: 45vh;
-    background-size: 68px 45vh;
+    height: 35vh;
+    background-size: 68px 35vh;
     background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(58, 103, 168, 0.5) 36px, #202c5c);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
@@ -150,8 +150,8 @@ body {
     bottom: 0;
     right: 0;
     background-repeat: repeat-x;
-    height: 60vh;
-    background-size: 68px 60vh;
+    height: 45vh;
+    background-size: 68px 45vh;
     background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(58, 103, 168, 0.5) 36px, #202c5c);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
@@ -168,8 +168,8 @@ body {
     bottom: 0;
     right: 0;
     background-repeat: repeat-x;
-    height: 75vh;
-    background-size: 68px 75vh;
+    height: 55vh;
+    background-size: 68px 55vh;
     background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #202c5c);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
@@ -186,8 +186,62 @@ body {
     bottom: 0;
     right: 0;
     background-repeat: repeat-x;
-    height: 90vh;
-    background-size: 68px 90vh;
+    height: 65vh;
+    background-size: 68px 65vh;
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #202c5c);
+    animation: slidein 2.5s infinite alternate;
+    z-index: -1; }
+
+#water[data-water-level="6"] {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  z-index: 1; }
+  #water[data-water-level="6"]:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    height: 75vh;
+    background-size: 68px 75vh;
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #202c5c);
+    animation: slidein 2.5s infinite alternate;
+    z-index: -1; }
+
+#water[data-water-level="7"] {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  z-index: 1; }
+  #water[data-water-level="7"]:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    height: 85vh;
+    background-size: 68px 85vh;
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #202c5c);
+    animation: slidein 2.5s infinite alternate;
+    z-index: -1; }
+
+#water[data-water-level="10"] {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  z-index: 1; }
+  #water[data-water-level="10"]:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    height: 95vh;
+    background-size: 68px 95vh;
     background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #202c5c);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
@@ -206,19 +260,28 @@ body {
   height: 15vh; }
 
 #bubbles[data-bubble-height="1"] {
-  height: 30vh; }
+  height: 25vh; }
 
 #bubbles[data-bubble-height="2"] {
-  height: 45vh; }
+  height: 35vh; }
 
 #bubbles[data-bubble-height="3"] {
-  height: 60vh; }
+  height: 45vh; }
 
 #bubbles[data-bubble-height="4"] {
-  height: 75vh; }
+  height: 55vh; }
 
 #bubbles[data-bubble-height="5"] {
-  height: 90vh; }
+  height: 65vh; }
+
+#bubbles[data-bubble-height="6"] {
+  height: 75vh; }
+
+#bubbles[data-bubble-height="7"] {
+  height: 85vh; }
+
+#bubbles[data-bubble-height="10"] {
+  height: 95vh; }
 
 .bubble {
   width: 30px;
@@ -416,10 +479,22 @@ body {
 #results {
   position: relative;
   color: #ffffff;
-  text-align: center; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
   #results h1 {
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  #results h2 {
+    margin-bottom: 0px; }
+  #results h3 {
+    font-size: 1.6em;
+    font-style: italic;
+    margin-top: 0px; }
   #results p, #results .question {
     text-align: left; }
   #results button {
@@ -457,6 +532,18 @@ div.raybase[data-raybase-position="3"] {
   top: -350px; }
 
 div.raybase[data-raybase-position="4"] {
+  top: -300px; }
+
+div.raybase[data-raybase-position="5"] {
+  top: -400px; }
+
+div.raybase[data-raybase-position="6"] {
+  top: -350px; }
+
+div.raybase[data-raybase-position="7"] {
+  top: -300px; }
+
+div.raybase[data-raybase-position="10"] {
   top: -300px; }
 
 div.ray {

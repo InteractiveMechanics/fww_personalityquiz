@@ -6,23 +6,35 @@
 
 
 #water[data-water-level="1"] {
-	@include water(30vh, $medium-blue, $darker-blue);
+	@include water(25vh, $medium-blue, $darker-blue);
 }
 
 #water[data-water-level="2"] {
-	@include water(45vh, $medium-blue, $darker-blue);
+	@include water(35vh, $medium-blue, $darker-blue);
 }
 
 #water[data-water-level="3"] {
-	@include water(60vh, $medium-blue, $darker-blue);
+	@include water(45vh, $medium-blue, $darker-blue);
 }
 
 #water[data-water-level="4"] {
-	@include water(75vh, $transparent-blue, $darker-blue);
+	@include water(55vh, $transparent-blue, $darker-blue);
 }
 
 #water[data-water-level="5"] {
-	@include water(90vh, $transparent-blue, $darker-blue);
+	@include water(65vh, $transparent-blue, $darker-blue);
+}
+
+#water[data-water-level="6"] {
+	@include water(75vh, $transparent-blue, $darker-blue);
+}
+
+#water[data-water-level="7"] {
+	@include water(85vh, $transparent-blue, $darker-blue);
+}
+
+#water[data-water-level="10"] {
+	@include water(95vh, $transparent-blue, $darker-blue);
 }
 
 @keyframes slidein {
@@ -48,25 +60,38 @@
 }
 
 #bubbles[data-bubble-height="1"] {
-	height: 30vh;
+	height: 25vh;
 }
 
 #bubbles[data-bubble-height="2"] {
-	height: 45vh;
+	height: 35vh;
 }
 
 
 #bubbles[data-bubble-height="3"] {
-	height: 60vh;
+	height: 45vh;
 }
 
 #bubbles[data-bubble-height="4"] {
-	height: 75vh;
+	height: 55vh;
 }
 
 #bubbles[data-bubble-height="5"] {
-	height: 90vh;
+	height: 65vh;
 }
+
+#bubbles[data-bubble-height="6"] {
+	height: 75vh;
+}
+
+#bubbles[data-bubble-height="7"] {
+	height: 85vh;
+}
+
+#bubbles[data-bubble-height="10"] {
+	height: 95vh;
+}
+
 
 .bubble {
     width: 30px;

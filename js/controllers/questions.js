@@ -14,9 +14,9 @@ Questions = (function() {
            clearQuiz();
  
             $('#quiz-template').tmpl(data.questions[id]).appendTo('#questions'); 
-
+            alert(id);
             buildOptions(id);
-            adjustWaterLevel(id);  
+            adjustWaterLevel(data.questions[id].step);  
         }
     }
 
@@ -31,7 +31,8 @@ Questions = (function() {
     var nextQuestion = function() {
         if ($('.answer-btn').attr('data-next')) {
             var id = $(this).attr('data-next');
-            buildQuestions(id);
+            buildQuestions(id-1);
+           
         } else {
             var id = $(this).attr('data-result');
             clearQuiz();
@@ -40,14 +41,14 @@ Questions = (function() {
         }
     }
 
-    var adjustWaterLevel = function(id) {
-        $('#water').attr('data-water-level', id);
-        $('#bubbles').attr('data-bubble-height', id);
-        $('.raybase').attr('data-raybase-position', id);
-        if (id > 2) {
+    var adjustWaterLevel = function(level) {
+        $('#water').attr('data-water-level', level);
+        $('#bubbles').attr('data-bubble-height', level);
+        $('.raybase').attr('data-raybase-position', level);
+        if (level > 2) {
             $('.answer-btn').css('color', '#ffffff').css('z-index', '99');
         }
-        if (id > 3) {
+        if (level > 3) {
             $('.question').css('color', '#ffffff').css('z-index', '99');
         }
     }
@@ -67,7 +68,8 @@ Questions = (function() {
         init: init,
         buildQuestions: buildQuestions,
         clearQuiz: clearQuiz,
-        resetWaterLevel: resetWaterLevel
+        resetWaterLevel: resetWaterLevel,
+        adjustWaterLevel: adjustWaterLevel
     }
 
 })();

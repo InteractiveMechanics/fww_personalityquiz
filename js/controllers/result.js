@@ -35,13 +35,19 @@ Result = (function() {
     }
 
     var buildResults = function(id) {
-        if (id == null) {
+        if (id == null || id == 1) {
             $('#result-template').tmpl(data.results[0]).appendTo('#results');
         } else {
-    	$('#result-template').tmpl(data.results[id]).appendTo('#results');
+    	$('#result-template').tmpl(data.results[id-1]).appendTo('#results');
         }
     	$('#results').removeClass('fade').addClass('in');
+        Questions.adjustWaterLevel(10);
+        clearGui();
    	}
+
+    var clearGui = function() {
+        $('#gui').addClass('fade').addClass('hidden');
+    }
 
    	var clearResults = function() {
    		$('#results').html('');

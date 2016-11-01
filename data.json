@@ -6,7 +6,7 @@
             "options": [
                 {
                     "answer": "I'm a water baby -- I'm in the water every chance I get.",
-                    "id": 1
+                    "id": 2
                 },
                 {
                     "answer": "Sure, Ill take a dip in a pool or lake, but I prefer to stay dry",
@@ -66,7 +66,7 @@
                 },
                 {
                     "answer": "I'd prefer to snorkel than to scuba dive.",
-                    "resultId": 11
+                    "id": 11
                 }
             ]
         },
@@ -219,7 +219,7 @@
                     "id": 17
                 },
                 {
-                    "answer": "I'm comfortable on the ground, thank you very much.",
+                    "answer": "I'm really high energy and am always on the go.",
                     "resultId": 15
                 }
             ]
@@ -240,7 +240,7 @@
         },
         {
             "id": 18,
-            "step": 5,
+            "step": 3,
             "options": [
                 {
                     "answer": "I like to keep things around me clean and tidy.",

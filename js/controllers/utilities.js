@@ -29,6 +29,7 @@ Utilities = (function() {
             Questions.resetWaterLevel();
             Result.clearCalculate();
             Result.clearResults();
+            resetGui();
         }
     }
 
@@ -39,6 +40,12 @@ Utilities = (function() {
             $('.home-button').removeClass('fade').addClass('in');
             Questions.buildQuestions();
 
+        }
+    }
+
+    var resetGui = function() {
+        if ($('#gui').hasClass('fade')) {
+            $('#gui').removeClass('hidden').removeClass('fade').addClass('in');        
         }
     }
 

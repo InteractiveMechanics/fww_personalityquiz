@@ -18,6 +18,7 @@
     <script id="result-template" type="text/x-jQuery-tmpl">
         <h2>Your Match Made in the River</h2>
         <h1>${name}</h1>
+        <h3>${latin}</h3>
         <p>${body}</p>
         <button class="back-to-start">Back to Start <img src="/assets/images/icon-arrow-white.svg" alt="arrow"></button>
     </script>
@@ -32,7 +33,7 @@
         <div class="question">${text}</div>
         <ul id="options"></ul>
 
-        <div class="progress">Question <span class="progress-current">${step}</span> of <span class="progress-total">7</span></div>
+        <div class="progress">Step <span class="progress-current">${step}</span> of <span class="progress-total">?</span></div>
     </script>
 
     <script src="./js/lib/jquery-1.11.3.min.js"></script>
@@ -68,7 +69,7 @@
     </div>
     <div id="content">
         <div id="introduction" class="fade in">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare lacinia tortor eu feugiat.</p>
+            <p>You'll be presented with a series of statements to find out which river organism is most like you. In each pair, choose the statement that best describes you and follow the path until your a matched with a profile of your organism.</p>
             <button class="start-quiz">Take the Quiz <img src="/assets/images/icon-arrow-blue.svg" alt="arrow"></button>
         </div>
         <div id="questions"></div>
