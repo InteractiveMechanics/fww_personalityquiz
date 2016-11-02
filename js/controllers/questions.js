@@ -12,7 +12,6 @@ Questions = (function() {
            adjustWaterLevel(0);
         } else {
            clearQuiz();
- 
             $('#quiz-template').tmpl(data.questions[id]).appendTo('#questions'); 
             alert(id);
             buildOptions(id);
@@ -29,16 +28,15 @@ Questions = (function() {
     }
 
     var nextQuestion = function() {
-        if ($('.answer-btn').attr('data-next')) {
-            var id = $(this).attr('data-next');
-            buildQuestions(id-1);
-           
-        } else {
-            var id = $(this).attr('data-result');
-            clearQuiz();
-            Result.calculateResults();
-            setTimeout(function() { Result.buildResults(id); }, 2500);
-        }
+        var id = $(this).attr('data-next');
+        buildQuestions(id-1);  
+    }
+
+    var getResult = function() {
+         var id = $(this).attr('data-result');
+        clearQuiz();
+        Result.calculateResults(id-1);
+        setTimeout(function() { Result.buildResults(id); }, 2500);
     }
 
     var adjustWaterLevel = function(level) {
@@ -61,7 +59,8 @@ Questions = (function() {
 
 
     var bindEvents = function() {
-        $(document).on('click tap', '.answer-btn', nextQuestion);
+        $(document).on('click tap', '.answer-btn[data-next]', nextQuestion);
+        $(document).on('click tap', '.answer-btn[data-result]', getResult);
     }
 
     return {

@@ -6,35 +6,35 @@
 
 
 #water[data-water-level="1"] {
-	@include water(25vh, $medium-blue, $darker-blue);
+	@include water(25vh, $semi-transparent-blue, $medium-blue);
 }
 
 #water[data-water-level="2"] {
-	@include water(35vh, $medium-blue, $darker-blue);
+	@include water(35vh, $semi-transparent-blue, $medium-blue);
 }
 
 #water[data-water-level="3"] {
-	@include water(45vh, $medium-blue, $darker-blue);
+	@include water(45vh, $semi-transparent-blue, $medium-blue);
 }
 
 #water[data-water-level="4"] {
-	@include water(55vh, $transparent-blue, $darker-blue);
+	@include water(55vh, $transparent-blue, $medium-blue);
 }
 
 #water[data-water-level="5"] {
-	@include water(65vh, $transparent-blue, $darker-blue);
+	@include water(65vh, $transparent-blue, $medium-blue);
 }
 
 #water[data-water-level="6"] {
-	@include water(75vh, $transparent-blue, $darker-blue);
+	@include water(75vh, $transparent-blue, $medium-blue);
 }
 
 #water[data-water-level="7"] {
-	@include water(85vh, $transparent-blue, $darker-blue);
+	@include water(85vh, $transparent-blue, $medium-blue);
 }
 
 #water[data-water-level="10"] {
-	@include water(95vh, $transparent-blue, $darker-blue);
+	@include water(97vh, $transparent-blue, $medium-blue);
 }
 
 @keyframes slidein {
@@ -89,7 +89,7 @@
 }
 
 #bubbles[data-bubble-height="10"] {
-	height: 95vh;
+	height: 97vh;
 }
 
 

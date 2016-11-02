@@ -116,7 +116,7 @@ body {
     background-repeat: repeat-x;
     height: 25vh;
     background-size: 68px 25vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(58, 103, 168, 0.5) 36px, #202c5c);
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.7) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
 
@@ -134,7 +134,7 @@ body {
     background-repeat: repeat-x;
     height: 35vh;
     background-size: 68px 35vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(58, 103, 168, 0.5) 36px, #202c5c);
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.7) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
 
@@ -152,7 +152,7 @@ body {
     background-repeat: repeat-x;
     height: 45vh;
     background-size: 68px 45vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(58, 103, 168, 0.5) 36px, #202c5c);
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.7) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
 
@@ -170,7 +170,7 @@ body {
     background-repeat: repeat-x;
     height: 55vh;
     background-size: 68px 55vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #202c5c);
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
 
@@ -188,7 +188,7 @@ body {
     background-repeat: repeat-x;
     height: 65vh;
     background-size: 68px 65vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #202c5c);
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
 
@@ -206,7 +206,7 @@ body {
     background-repeat: repeat-x;
     height: 75vh;
     background-size: 68px 75vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #202c5c);
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
 
@@ -224,7 +224,7 @@ body {
     background-repeat: repeat-x;
     height: 85vh;
     background-size: 68px 85vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #202c5c);
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
 
@@ -240,9 +240,9 @@ body {
     bottom: 0;
     right: 0;
     background-repeat: repeat-x;
-    height: 95vh;
-    background-size: 68px 95vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #202c5c);
+    height: 97vh;
+    background-size: 68px 97vh;
+    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: -1; }
 
@@ -281,7 +281,7 @@ body {
   height: 85vh; }
 
 #bubbles[data-bubble-height="10"] {
-  height: 95vh; }
+  height: 97vh; }
 
 .bubble {
   width: 30px;
@@ -444,14 +444,14 @@ body {
   position: relative;
   z-index: 2; }
   #options li:first-of-type {
-    margin-bottom: 1.25em; }
+    margin-bottom: 3em; }
 
 .answer-btn {
   border: none;
   background: none;
-  color: #67a6d8;
-  text-transform: uppercase;
-  font-size: 2.3em; }
+  color: #355da5;
+  font-family: 'Adobe Garamond Pro';
+  font-size: 1.9em; }
 
 .progress {
   position: absolute;
@@ -460,11 +460,13 @@ body {
   color: white;
   text-transform: uppercase;
   font-size: 1.15em;
-  width: 114px;
+  width: 100%;
   left: 0;
   right: 0;
   margin-left: auto;
-  margin-right: auto; }
+  text-align: center;
+  margin-right: auto;
+  letter-spacing: 1px; }
 
 #calculating {
   font-family: 'TradeGothic LT CondEighteen';

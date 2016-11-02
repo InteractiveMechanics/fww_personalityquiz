@@ -18,7 +18,7 @@
     z-index: 2;
     li {
     	&:first-of-type {
-    		margin-bottom: 1.25em;
+    		margin-bottom: 3em;
     	}
 
     }
@@ -27,9 +27,10 @@
 .answer-btn {
     border: none;
     background: none;
-    color: $blue;
-    text-transform: uppercase;
-    font-size: 2.3em;
+    color: $dark-blue;
+    font-family: 'Adobe Garamond Pro';
+    //text-transform: uppercase;
+    font-size: 1.9em;
 }
 
 .progress {
@@ -39,11 +40,13 @@
     color: white;
     text-transform: uppercase;
     font-size: 1.15em;
-    width: 114px;
+    width: 100%;
     left: 0;
     right: 0;
     margin-left: auto;
+    text-align: center;
     margin-right: auto;
+    letter-spacing: 1px;
 }
 
 #calculating {
