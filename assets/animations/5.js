@@ -16,14 +16,14 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"Eel_PQ_atlas_.png", id:"Eel_PQ_atlas_"}
+		{src:"assets/animations/images/Eel_PQ_atlas_.png", id:"Eel_PQ_atlas_"}
 	]
 };
 
 
 
 lib.ssMetadata = [
-		{name:"Eel_PQ_atlas_", frames: [[0,0,3046,1050],[3048,260,10,10],[3048,284,10,10],[3048,308,10,10],[3048,320,10,10],[3048,272,10,10],[3048,296,10,10],[3048,148,54,54],[3048,204,54,54],[3048,0,72,72],[3048,74,72,72]]}
+		{name:"Eel_PQ_atlas_", frames: [[0,0,3046,1050],[3048,260,10,10],[3048,272,10,10],[3048,284,10,10],[3048,296,10,10],[3048,308,10,10],[3048,320,10,10],[3048,148,54,54],[3048,204,54,54],[3048,0,72,72],[3048,74,72,72]]}
 ];
 
 
@@ -444,7 +444,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(67).to({regY:416.5,rotation:0,skewX:-36,skewY:144,x:386.1,y:449.4},0).to({_off:true},79).wait(94));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-170.5,1506.3,545,124.2);
+p.nominalBounds = new cjs.Rectangle(-170.5,1506.4,544.9,124.2);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{});
 var lib, images, createjs, ss;

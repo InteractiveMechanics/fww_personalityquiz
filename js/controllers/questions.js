@@ -43,7 +43,7 @@ Questions = (function() {
         $('#water').attr('data-water-level', level);
         $('#bubbles').attr('data-bubble-height', level);
         $('.raybase').attr('data-raybase-position', level);
-        if (level > 2) {
+        if (level > 3) {
             $('.answer-btn').css('color', '#ffffff').css('z-index', '99');
         }
         if (level > 3) {

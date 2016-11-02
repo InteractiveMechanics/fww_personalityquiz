@@ -23,8 +23,10 @@ Result = (function() {
 
     var calculateResults = function() {
     	if ($('#calculating').hasClass('fade') || $('#calculating').hasClass('hidden')) {
+            Questions.adjustWaterLevel(10);
     		$('#calculating').removeClass('fade').removeClass('hidden').addClass('in');
     		exitCalculate();
+
     	}
     }
 
@@ -35,13 +37,20 @@ Result = (function() {
     }
 
     var buildResults = function(id) {
+
         if (id == null || id == 1) {
             $('#result-template').tmpl(data.results[0]).appendTo('#results');
+            $('#animation').load('/assets/animations/1.html', function() {
+                animationInit();
+            });
         } else {
     	$('#result-template').tmpl(data.results[id-1]).appendTo('#results');
+            $('#animation').load('/assets/animations/' + id + '.html', function() {
+                animationInit();
+            });
         }
     	$('#results').removeClass('fade').addClass('in');
-        Questions.adjustWaterLevel(10);
+        //Questions.adjustWaterLevel(10);
         clearGui();
    	}
 

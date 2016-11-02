@@ -53,6 +53,7 @@
 
 #bubbles {
 	position: relative;
+	z-index: 2;
 }
 
 #bubbles[data-bubble-height="0"] {
