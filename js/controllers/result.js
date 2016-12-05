@@ -51,7 +51,9 @@ Result = (function() {
         }
     	$('#results').removeClass('fade').addClass('in');
         //Questions.adjustWaterLevel(10);
-        clearGui();
+        //clearGui();
+        $('.logo').addClass('fade').removeClass('in');
+        $('#gui').css('height', '0vh');
    	}
 
     var clearGui = function() {

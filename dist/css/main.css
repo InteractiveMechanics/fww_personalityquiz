@@ -60,7 +60,7 @@ body {
     border: none;
     text-transform: uppercase;
     color: #67a6d8;
-    font-size: 1.7em; }
+    font-size: 2.2em; }
     #introduction button img {
       padding-left: 10px;
       height: 21px; }
@@ -80,9 +80,11 @@ body {
   margin: 0 auto;
   color: #ffffff;
   text-transform: uppercase;
-  text-align: center;
-  width: 200px;
-  font-size: 2em; }
+  text-align: center; }
+  .logo img {
+    height: 200px; }
+  .logo .smaller {
+    height: 150px; }
 
 #water[data-water-level="0"] {
   position: absolute;
@@ -493,13 +495,17 @@ body {
     margin-top: 0px;
     margin-bottom: 0px; }
   #results h2 {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    text-transform: uppercase; }
   #results h3 {
     font-size: 1.6em;
     font-style: italic;
     margin-top: 0px; }
   #results p, #results .question {
     text-align: left; }
+  #results span {
+    font-style: italic;
+    font-family: 'Adobe Garamond Pro'; }
   #results button {
     border: none;
     background: none;

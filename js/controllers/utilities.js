@@ -25,6 +25,7 @@ Utilities = (function() {
         if ($attract.hasClass('hidden')) {
             $attract.removeClass('hidden').removeClass('fade').addClass('in');
             $('.home-button').addClass('fade').removeClass('in');
+            $('#logo-image').removeClass('smaller');
             Questions.clearQuiz();
             Questions.resetWaterLevel();
             Result.clearCalculate();
@@ -38,14 +39,17 @@ Utilities = (function() {
         if (!$attract.hasClass('hidden')) {
             $attract.addClass('hidden').removeClass('in');
             $('.home-button').removeClass('fade').addClass('in');
+            $('#logo-image').addClass('smaller');
             Questions.buildQuestions();
 
         }
     }
 
     var resetGui = function() {
-        if ($('#gui').hasClass('fade')) {
-            $('#gui').removeClass('hidden').removeClass('fade').addClass('in');        
+        if ($('#gui').hasClass('fade') || $('#gui').css('height', '0vh')) {
+            $('#gui').removeClass('hidden').removeClass('fade').addClass('in'); 
+            $('#gui').css('height', '30vh');
+            $('.logo').removeClass('fade').addClass('in').removeClass('smaller');       
         }
     }
 

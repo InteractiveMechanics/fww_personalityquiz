@@ -18,7 +18,11 @@
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
-	width: 200px;
-	font-size: 2em;
+	img {
+		height: 200px;
+	}
+	.smaller {
+		height: 150px;
+	}
 }
 
