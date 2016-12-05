@@ -19,12 +19,13 @@
         <h2>Your Match Made in the River</h2>
         <h1>${name}</h1>
         <h3>${latin}</h3>
-        <p>${exclamation} <span>${latin}</span>, ${body}</p>
-        <button class="back-to-start">Back to Start <img src="/assets/images/icon-arrow-white.svg" alt="arrow"></button>
+        <p>${body}</p>
+        <button class="back-to-start">Back to Start <img src="./assets/images/icon-arrow-white.svg" alt="arrow"></button>
     </script>
 
     <script id="option-template" type="text/x-jQuery-tmpl">
-        <li><button class="answer-btn"  {{if id}} data-next="${id}" {{/if}}
+        <li
+        ><button class="answer-btn"  {{if id}} data-next="${id}" {{/if}}
             {{if resultId}} data-result="${resultId}" {{/if}}>${answer}</button></li>
     </script>
 
@@ -32,7 +33,7 @@
         <div class="question">${text}</div>
         <ul id="options"></ul>
 
-        <div class="progress">Question <span class="progress-current">${step}</span></div>
+        <div class="progress">Step <span class="progress-current">${step}</span></div>
     </script>
 
     <script src="./js/lib/jquery-1.11.3.min.js"></script>
@@ -64,13 +65,12 @@
             </g>
             </svg>
         </div>
-        <div class="logo"><img src="/assets/images/logo.svg" alt="logo" id="logo-image"></div>
+        <div class="logo"><img src="./assets/images/logo.svg" alt="logo"></div>
     </div>
     <div id="content">
         <div id="introduction" class="fade in">
-            <p>Land lover? Graceful as a fish? Born to fly? Prefer the shelter of your own shell? Invisible to the naked eye? Small but mighty? FIND YOUR MATCH!</p>
-            <p>We have prepared a series of statements to help you find out which river organism is most like you. In each pair, choose the statement that best describes you and follow the path until you are matched with the profile of your organism.</p>
-            <button class="start-quiz">Take the Quiz <img src="/assets/images/icon-arrow-blue.svg" alt="arrow"></button>
+            <p>You'll be presented with a series of statements to find out which river organism is most like you. In each pair, choose the statement that best describes you and follow the path until your a matched with a profile of your organism.</p>
+            <button class="start-quiz">Take the Quiz <img src="./assets/images/icon-arrow-blue.svg" alt="arrow"></button>
         </div>
         <div id="questions"></div>
         <div id="calculating" class="fade">
