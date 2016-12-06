@@ -13,7 +13,7 @@
 	  	background-repeat: repeat-x;
     	height: $waterheight; //default: 100px
     	background-size: 68px $waterheight;
-    	background-image: radial-gradient(circle at 34px -9px, transparent 34px, $watercolor1 36px, $watercolor2);
+    	background-image: radial-gradient(circle at 34px -9px, rgba(252, 252, 252, 0) 34px, $watercolor1 36px, $watercolor2);
     	animation: slidein 2.5s infinite alternate;
     	z-index: 1;
 	}

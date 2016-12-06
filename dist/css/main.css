@@ -100,7 +100,7 @@ body {
     background-repeat: repeat-x;
     height: 15vh;
     background-size: 68px 15vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, #67a6d8 36px, #67a6d8);
+    background-image: radial-gradient(circle at 34px -9px, rgba(252, 252, 252, 0) 34px, #67a6d8 36px, #67a6d8);
     animation: slidein 2.5s infinite alternate;
     z-index: 1; }
 
@@ -118,7 +118,7 @@ body {
     background-repeat: repeat-x;
     height: 25vh;
     background-size: 68px 25vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.7) 36px, #3a67a8);
+    background-image: radial-gradient(circle at 34px -9px, rgba(252, 252, 252, 0) 34px, rgba(103, 166, 216, 0.7) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: 1; }
 
@@ -136,7 +136,7 @@ body {
     background-repeat: repeat-x;
     height: 35vh;
     background-size: 68px 35vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.7) 36px, #3a67a8);
+    background-image: radial-gradient(circle at 34px -9px, rgba(252, 252, 252, 0) 34px, rgba(103, 166, 216, 0.7) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: 1; }
 
@@ -154,7 +154,7 @@ body {
     background-repeat: repeat-x;
     height: 45vh;
     background-size: 68px 45vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.7) 36px, #3a67a8);
+    background-image: radial-gradient(circle at 34px -9px, rgba(252, 252, 252, 0) 34px, rgba(103, 166, 216, 0.7) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: 1; }
 
@@ -172,7 +172,7 @@ body {
     background-repeat: repeat-x;
     height: 55vh;
     background-size: 68px 55vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
+    background-image: radial-gradient(circle at 34px -9px, rgba(252, 252, 252, 0) 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: 1; }
 
@@ -190,7 +190,7 @@ body {
     background-repeat: repeat-x;
     height: 65vh;
     background-size: 68px 65vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
+    background-image: radial-gradient(circle at 34px -9px, rgba(252, 252, 252, 0) 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: 1; }
 
@@ -208,7 +208,7 @@ body {
     background-repeat: repeat-x;
     height: 75vh;
     background-size: 68px 75vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
+    background-image: radial-gradient(circle at 34px -9px, rgba(252, 252, 252, 0) 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: 1; }
 
@@ -226,7 +226,7 @@ body {
     background-repeat: repeat-x;
     height: 85vh;
     background-size: 68px 85vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
+    background-image: radial-gradient(circle at 34px -9px, rgba(252, 252, 252, 0) 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: 1; }
 
@@ -244,7 +244,7 @@ body {
     background-repeat: repeat-x;
     height: 97vh;
     background-size: 68px 97vh;
-    background-image: radial-gradient(circle at 34px -9px, transparent 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
+    background-image: radial-gradient(circle at 34px -9px, rgba(252, 252, 252, 0) 34px, rgba(103, 166, 216, 0.5) 36px, #3a67a8);
     animation: slidein 2.5s infinite alternate;
     z-index: 1; }
 
