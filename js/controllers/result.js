@@ -1,6 +1,6 @@
 Result = (function() {
 	var timeout = [];
-    var duration = 2000;
+    var duration = 10000;
 
     var init = function() {
         bindEvents();

@@ -36,17 +36,17 @@ Questions = (function() {
          var id = $(this).attr('data-result');
         clearQuiz();
         Result.calculateResults(id-1);
-        setTimeout(function() { Result.buildResults(id); }, 2500);
+        setTimeout(function() { Result.buildResults(id); }, 10500); //2500
     }
 
     var adjustWaterLevel = function(level) {
         $('#water').attr('data-water-level', level);
         $('#bubbles').attr('data-bubble-height', level);
         $('.raybase').attr('data-raybase-position', level);
-        if (level > 3) {
+        if (level > 4) {
             $('.answer-btn').css('color', '#ffffff').css('z-index', '99');
         }
-        if (level > 3) {
+        if (level > 4) {
             $('.question').css('color', '#ffffff').css('z-index', '99');
         }
     }

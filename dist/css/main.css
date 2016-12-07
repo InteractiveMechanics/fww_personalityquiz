@@ -28,6 +28,9 @@ p, .question {
 .in {
   opacity: 1; }
 
+.no-flick {
+  -webkit-transform: translate3d(0, 0, 0); }
+
 html,
 body {
   height: 100vh;
@@ -71,10 +74,11 @@ body {
   z-index: 2; }
 
 .home-button {
-  margin: 10px 0px 20px 15px; }
+  margin: 10px 0px 20px 15px;
+  filter: drop-shadow(0px 0px 5px #777);
+  -webkit-filter: drop-shadow(0px 0px 5px #777); }
   .home-button svg {
-    width: 38px;
-    filter: drop-shadow(0px 0px 5px #777); }
+    width: 38px; }
 
 .logo {
   margin: 0 auto;
@@ -447,7 +451,8 @@ body {
   position: relative;
   z-index: 2; }
   #options li:first-of-type {
-    margin-bottom: 3em; }
+    margin-bottom: 3em;
+    margin-top: 5em; }
 
 .answer-btn {
   border: none;
@@ -479,7 +484,10 @@ body {
   z-index: 2;
   text-transform: uppercase;
   width: 50%;
-  margin: 200px auto; }
+  margin: 0px auto; }
+  #calculating img {
+    width: 200px;
+    height: auto; }
 
 #results {
   position: relative;
