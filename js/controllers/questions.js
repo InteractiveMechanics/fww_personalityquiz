@@ -13,7 +13,6 @@ Questions = (function() {
         } else {
            clearQuiz();
             $('#quiz-template').tmpl(data.questions[id]).appendTo('#questions'); 
-            alert(id);
             buildOptions(id);
             adjustWaterLevel(data.questions[id].step);  
         }
@@ -36,8 +35,8 @@ Questions = (function() {
          var id = $(this).attr('data-result');
         clearQuiz();
         Result.calculateResults(id-1);
-        setTimeout(function() { Result.buildResults(id); }, 10500); //2500
-    }
+        setTimeout(function() { Result.buildResults(id); }, 2500);
+    } 
 
     var adjustWaterLevel = function(level) {
         $('#water').attr('data-water-level', level);

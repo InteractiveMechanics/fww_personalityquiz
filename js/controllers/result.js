@@ -1,6 +1,6 @@
 Result = (function() {
 	var timeout = [];
-    var duration = 10000;
+    var duration = 2000;
 
     var init = function() {
         bindEvents();
@@ -40,12 +40,12 @@ Result = (function() {
 
         if (id == null || id == 1) {
             $('#result-template').tmpl(data.results[0]).appendTo('#results');
-            $('#animation').load('/assets/animations/1.html', function() {
+            $('#animation').load('assets/animations/1.html', function() {
                 animationInit();
             });
         } else {
     	$('#result-template').tmpl(data.results[id-1]).appendTo('#results');
-            $('#animation').load('/assets/animations/' + id + '.html', function() {
+            $('#animation').load('assets/animations/' + id + '.html', function() {
                 animationInit();
             });
         }

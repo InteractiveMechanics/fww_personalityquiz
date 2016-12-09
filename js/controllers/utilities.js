@@ -20,7 +20,6 @@ Utilities = (function() {
         $(document).on('click tap', '.home-button', resetInteractive);
     }
     var resetInteractive = function() {
-        // TODO: Reset back to start
         $attract = $('#introduction');
         if ($attract.hasClass('hidden')) {
             $attract.removeClass('hidden').removeClass('fade').addClass('in');

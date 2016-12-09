@@ -2,7 +2,26 @@
   font-family: "TradeGothic LT CondEighteen";
   src: url("../fonts/e72e8eda063ac8bb688e72544c5bca28.eot");
   src: url("../fonts/e72e8eda063ac8bb688e72544c5bca28.eot?#iefix") format("embedded-opentype"), url("../fonts/e72e8eda063ac8bb688e72544c5bca28.woff2") format("woff2"), url("../fonts/e72e8eda063ac8bb688e72544c5bca28.woff") format("woff"), url("../fonts/e72e8eda063ac8bb688e72544c5bca28.ttf") format("truetype"), url("../fonts/e72e8eda063ac8bb688e72544c5bca28.svg#TradeGothic LT CondEighteen") format("svg"); }
+@font-face {
+  font-family: 'TradeGothicW01Cn_18';
+  src: url("../fonts/TradeGothicW01Cn_18.eot");
+  src: url("../fonts/TradeGothicW01Cn_18.otf") format("otf"), url("../fonts/TradeGothicW01Cn_18.ttf") format("truetype"), url("../fonts/TradeGothicW01Cn_18.woff") format("woff"); }
+@font-face {
+  font-family: 'FiraSansCondensed-Bold';
+  src: url("../fonts/FiraSansCondensed-Bold.eot");
+  src: url("../fonts/FiraSansCondensed-Bold.ttf") format("truetype"), url("../fonts/FiraSansCondensed-Bold.woff") format("woff"), url("../fonts/FiraSansCondensed-Bold.woff2") format("woff2"); }
+@font-face {
+  font-family: 'FiraSansCondensed-Regular';
+  src: url("../fonts/FiraSansCondensed-Regular.eot");
+  src: url("../fonts/FiraSansCondensed-Regular.ttf") format("truetype"), url("../fonts/FiraSansCondensed-Regular.woff") format("woff"), url("../fonts/FiraSansCondensed-Regular.woff2") format("woff2"); }
+@font-face {
+  font-family: 'FiraSansCompressed-Bold';
+  src: url("../fonts/FiraSansCompressed-Bold.eot");
+  src: url("../fonts/FiraSansCompressed-Bold.ttf") format("truetype"), url("../fonts/FiraSansCompressed-Bold.woff") format("woff"), url("../fonts/FiraSansCompressed-Bold.woff2") format("woff2"); }
 * {
+  font-family: 'TradeGothicW01Cn_18'; }
+
+h1, h2, h3, h4, h5, h6, button {
   font-family: 'TradeGothic LT CondEighteen'; }
 
 h1 {
@@ -14,7 +33,7 @@ h1 {
     display: block; }
 
 p, .question {
-  font-family: 'Adobe Garamond Pro';
+  font-family: 'TradeGothicW01Cn_18';
   font-size: 21px;
   line-height: 1.8; }
 
@@ -55,7 +74,8 @@ body {
   pointer-events: none; }
 
 #introduction {
-  text-align: center; }
+  text-align: center;
+  margin-top: 75px; }
   #introduction p, #introduction .question {
     color: #355da5; }
   #introduction button {
@@ -74,11 +94,13 @@ body {
   z-index: 2; }
 
 .home-button {
-  margin: 10px 0px 20px 15px;
+  margin: 20px 0px 20px 20px;
   filter: drop-shadow(0px 0px 5px #777);
-  -webkit-filter: drop-shadow(0px 0px 5px #777); }
+  -webkit-filter: drop-shadow(0px 0px 5px #777);
+  border: none;
+  background: none; }
   .home-button svg {
-    width: 38px; }
+    width: 48px; }
 
 .logo {
   margin: 0 auto;
@@ -458,7 +480,6 @@ body {
   border: none;
   background: none;
   color: #355da5;
-  font-family: 'Adobe Garamond Pro';
   font-size: 1.9em; }
 
 .progress {
@@ -506,14 +527,14 @@ body {
     margin-bottom: 0px;
     text-transform: uppercase; }
   #results h3 {
+    font-family: 'TradeGothicW01Cn_18';
     font-size: 1.6em;
     font-style: italic;
     margin-top: 0px; }
   #results p, #results .question {
     text-align: left; }
   #results span {
-    font-style: italic;
-    font-family: 'Adobe Garamond Pro'; }
+    font-style: italic; }
   #results button {
     border: none;
     background: none;

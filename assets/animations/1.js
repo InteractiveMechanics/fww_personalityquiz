@@ -16,7 +16,7 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"./assets/animations/images/Mussels_PQ_atlas_.png", id:"Mussels_PQ_atlas_"}
+		{src:"assets/animations/images/Mussels_PQ_atlas_.png", id:"Mussels_PQ_atlas_"}
 	]
 };
 
