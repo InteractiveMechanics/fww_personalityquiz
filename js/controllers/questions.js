@@ -4,8 +4,7 @@ Questions = (function() {
     }
     
     var buildQuestions = function(id) {
-
-        
+     
         if (id == null) {
     	   $('#quiz-template').tmpl(data.questions[0]).appendTo('#questions');
            buildOptions(0);

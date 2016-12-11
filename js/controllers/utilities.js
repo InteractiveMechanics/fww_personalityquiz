@@ -29,6 +29,7 @@ Utilities = (function() {
             Questions.resetWaterLevel();
             Result.clearCalculate();
             Result.clearResults();
+            Result.fadeAnimation();
             resetGui();
         }
     }

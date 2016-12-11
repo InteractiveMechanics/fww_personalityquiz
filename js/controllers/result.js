@@ -30,6 +30,10 @@ Result = (function() {
     	}
     }
 
+    var fadeAnimation = function() {
+        $('#animation').addClass('fade');
+    }
+
     var clearCalculate = function() {
     	if ($('#calculating').hasClass('in')) {
     		$('#calculating').addClass('fade').addClass('hidden').removeClass('in');
@@ -37,18 +41,29 @@ Result = (function() {
     }
 
     var buildResults = function(id) {
+        if ($('#animation').hasClass('fade')) {
+            $('#animation').removeClass('fade');
+        }
 
         if (id == null || id == 1) {
+            $('')
             $('#result-template').tmpl(data.results[0]).appendTo('#results');
             $('#animation').load('assets/animations/1.html', function() {
                 animationInit();
             });
+            setTimeout(function() {
+                fadeAnimation();
+            }, 5000);
+
         } else {
     	$('#result-template').tmpl(data.results[id-1]).appendTo('#results');
             $('#animation').load('assets/animations/' + id + '.html', function() {
                 animationInit();
             });
         }
+         setTimeout(function() {
+                fadeAnimation();
+        }, 5000);
     	$('#results').removeClass('fade').addClass('in');
         //Questions.adjustWaterLevel(10);
         //clearGui();
@@ -69,6 +84,7 @@ Result = (function() {
         init: init,
         calculateResults: calculateResults,
         clearCalculate: clearCalculate,
+        fadeAnimation: fadeAnimation,
         buildResults: buildResults,
         clearResults: clearResults
         

@@ -9,8 +9,8 @@ var tFontsUpdateCacheList = [];
 
 // library properties:
 lib.properties = {
-	width: 1024,
-	height: 768,
+	width: 768,
+	height: 1024,
 	fps: 12,
 	color: "#FFFFFF",
 	opacity: 1.00,
@@ -22907,7 +22907,7 @@ p.nominalBounds = new cjs.Rectangle(-293.3,-767.1,595.4,895.3);
 
 
 
-(lib._20161027_FWWPQ_v01 = function(mode,startPosition,loop) {
+(lib._20161028_FWWPQ_v01 = function(mode,startPosition,loop) {
 if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 	// diatom_mc

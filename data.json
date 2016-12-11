@@ -19,7 +19,7 @@
             "step": 2,
             "options": [
                 {
-                    "answer": "I'm a pretty mellow, grounded person",
+                    "answer": "I'm a pretty mellow, grounded person.",
                     "id": 3
                 },
                 {
@@ -303,7 +303,7 @@
             "name": "American sturgeon",
             "latin": "Acipenser oxyrinchus oxyrinchus",
             "exclamation": "Yippee! You’re",
-            "body": " more commonly known as the Atlantic sturgeon. You and this long-lived fish both share a love of water. Not only are you both water babies, but you’re always on the move. Sturgeon will even launch themselves out of the water, landing with a big splash that can be heard from half a mile away! Your sensitivity means that you’re also both attuned to what is going on around you. Sturgeon use electroreceptors on their heads and long barbels that hang below their snouts to help them find prey and navigate to their breeding grounds."
+            "body": " more commonly known as the American sturgeon. You and this long-lived fish both share a love of water. Not only are you both water babies, but you’re always on the move. Sturgeon will even launch themselves out of the water, landing with a big splash that can be heard from half a mile away! Your sensitivity means that you’re also both attuned to what is going on around you. Sturgeon use electroreceptors on their heads and long barbels that hang below their snouts to help them find prey and navigate to their breeding grounds."
         },
         {
             "id": 8,
