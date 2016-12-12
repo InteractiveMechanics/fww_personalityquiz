@@ -53,7 +53,7 @@ Result = (function() {
             });
             setTimeout(function() {
                 fadeAnimation();
-            }, 5000);
+            }, 7000);
 
         } else {
     	$('#result-template').tmpl(data.results[id-1]).appendTo('#results');
@@ -63,7 +63,7 @@ Result = (function() {
         }
          setTimeout(function() {
                 fadeAnimation();
-        }, 5000);
+        }, 7000);
     	$('#results').removeClass('fade').addClass('in');
         //Questions.adjustWaterLevel(10);
         //clearGui();
