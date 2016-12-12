@@ -16,14 +16,14 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"assets/animations/images/BullFrog_PQ_atlas_.png", id:"BullFrog_PQ_atlas_"}
+		{src:"assets/animations/images/Bullfrog_PQ_atlas_.png", id:"Bullfrog_PQ_atlas_"}
 	]
 };
 
 
 
 lib.ssMetadata = [
-		{name:"BullFrog_PQ_atlas_", frames: [[0,0,3046,1050],[3048,260,10,10],[3048,272,10,10],[3048,284,10,10],[3048,296,10,10],[3048,308,10,10],[3048,320,10,10],[3048,148,54,54],[3048,204,54,54],[3048,0,72,72],[3048,74,72,72]]}
+		{name:"Bullfrog_PQ_atlas_", frames: [[0,0,3046,1050],[3048,260,10,10],[3048,272,10,10],[3048,284,10,10],[3048,296,10,10],[3048,308,10,10],[3048,320,10,10],[3048,148,54,54],[3048,204,54,54],[3048,0,72,72],[3048,74,72,72]]}
 ];
 
 
