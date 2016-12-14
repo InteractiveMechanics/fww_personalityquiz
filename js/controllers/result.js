@@ -46,29 +46,31 @@ Result = (function() {
         }
 
         if (id == null || id == 1) {
-            $('')
+            sendGAEvent('Results: ' + data.results[0].name);
             $('#result-template').tmpl(data.results[0]).appendTo('#results');
             $('#animation').load('assets/animations/1.html', function() {
                 animationInit();
             });
             setTimeout(function() {
                 fadeAnimation();
-            }, 7000);
+            }, 8000);
 
         } else {
-    	$('#result-template').tmpl(data.results[id-1]).appendTo('#results');
+            sendGAEvent('Results: ' + data.results[id-1].name);
+    	    $('#result-template').tmpl(data.results[id-1]).appendTo('#results');
             $('#animation').load('assets/animations/' + id + '.html', function() {
                 animationInit();
             });
         }
-         setTimeout(function() {
-                fadeAnimation();
-        }, 7000);
+        setTimeout(function() {
+            fadeAnimation();
+        }, 8000);
     	$('#results').removeClass('fade').addClass('in');
         //Questions.adjustWaterLevel(10);
         //clearGui();
         $('.logo').addClass('fade').removeClass('in');
         $('#gui').css('height', '0vh');
+
    	}
 
     var clearGui = function() {

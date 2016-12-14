@@ -31,6 +31,8 @@ Utilities = (function() {
             Result.clearResults();
             Result.fadeAnimation();
             resetGui();
+
+            sendGAEvent('Home Screen');
         }
     }
 
@@ -41,7 +43,6 @@ Utilities = (function() {
             $('.home-button').removeClass('fade').addClass('in');
             $('#logo-image').addClass('smaller');
             Questions.buildQuestions();
-
         }
     }
 
