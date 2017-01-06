@@ -48,6 +48,7 @@ Result = (function() {
         if (id == null || id == 1) {
             sendGAEvent('Results: ' + data.results[0].name);
             $('#result-template').tmpl(data.results[0]).appendTo('#results');
+            $('#profile').attr('src', 'assets/images/profiles/1@2x.png');
             $('#animation').load('assets/animations/1.html', function() {
                 animationInit();
             });
@@ -58,6 +59,7 @@ Result = (function() {
         } else {
             sendGAEvent('Results: ' + data.results[id-1].name);
     	    $('#result-template').tmpl(data.results[id-1]).appendTo('#results');
+            $('#profile').attr('src', 'assets/images/profiles/' + id + '@2x.png');
             $('#animation').load('assets/animations/' + id + '.html', function() {
                 animationInit();
             });

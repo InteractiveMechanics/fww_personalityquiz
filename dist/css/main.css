@@ -546,6 +546,8 @@ body {
     #results button img {
       padding-left: 10px;
       height: 21px; }
+  #results img {
+    width: 175px; }
 
 #results.in {
   z-index: 3; }
