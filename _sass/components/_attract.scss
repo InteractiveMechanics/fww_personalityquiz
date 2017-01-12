@@ -3,6 +3,10 @@
 	margin-top: 75px;
 	p {
 		color: $dark-blue;
+
+        &:first-of-type {
+            font-family: 'TradeGothic LT CondEighteen';
+        }
 	}
 	button {
 		background: none;
@@ -10,6 +14,8 @@
 		text-transform: uppercase;
 		color: $blue;
 		font-size: 2.2em;
+        margin-top: 40px;
+
 		img {
 			padding-left: 10px;
 			height: 21px;

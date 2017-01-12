@@ -78,12 +78,15 @@ body {
   margin-top: 75px; }
   #introduction p, #introduction .question {
     color: #355da5; }
+    #introduction p:first-of-type, #introduction .question:first-of-type {
+      font-family: 'TradeGothic LT CondEighteen'; }
   #introduction button {
     background: none;
     border: none;
     text-transform: uppercase;
     color: #67a6d8;
-    font-size: 2.2em; }
+    font-size: 2.2em;
+    margin-top: 40px; }
     #introduction button img {
       padding-left: 10px;
       height: 21px; }
@@ -546,7 +549,7 @@ body {
     #results button img {
       padding-left: 10px;
       height: 21px; }
-  #results img {
+  #results img#profile {
     width: 175px; }
 
 #results.in {
