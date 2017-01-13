@@ -36,7 +36,7 @@ function handleComplete(evt) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	exportRoot = new lib._20161028_FWWPQ_v01();
+	exportRoot = new lib._20170113_FWWPQ_v01();
 	stage = new createjs.Stage(canvas);
 	stage.addChild(exportRoot);	
 	//Registers the "tick" event listener.
@@ -74,7 +74,7 @@ function handleComplete(evt) {
 			stage.scaleY = pRatio*sRatio;			
 			lastW = iw; lastH = ih; lastS = sRatio;		
 		}
-	})(false,'both',false,2);	
+	})(true,'both',true,2);	
 }
 </script>
 <!-- write your code here -->

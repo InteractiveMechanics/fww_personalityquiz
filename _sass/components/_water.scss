@@ -1,4 +1,7 @@
 // Water Levels
+#water {
+    overflow: hidden;
+}
 
 #water[data-water-level="0"] {
 	@include water(15vh, $blue, $blue);
@@ -39,12 +42,12 @@
 
 @keyframes slidein {
 	from {
-		left: 0;
+		transform: translate3d(0, 0, 0);
 		width: 110%;
 	}
 	
 	to {
-		left: -40px;
+		transform: translate3d(-40px, 0, 0);
 		width: 110%;
 	}
 }
@@ -54,6 +57,7 @@
 #bubbles {
 	position: relative;
 	z-index: 2;
+
 }
 
 #bubbles[data-bubble-height="0"] {
@@ -97,11 +101,12 @@
 .bubble {
     width: 30px;
     height: 30px;
-    background: rgba(250, 250, 250, 0.5);
+    background: rgba(#E5DFD1, 0.5);
     border-radius: 150px;
     -moz-border-radius: 150px;
     -webkit-border-radius: 150px;
     position: absolute;
+    top: 100%;
 }
 
 
@@ -165,20 +170,20 @@
 
 @keyframes moveclouds { 
     0% { 
-        bottom: -20px;
+        transform: translate3d(0, 0, 0);
         opacity: 0.5;
     }
     100% { 
-        bottom: 100%;
+        transform: translate3d(0, -500px, 0);
         opacity: 0;
     }
 }
 
 @keyframes sideWays { 
     0% { 
-        margin-left:0px;
+        transform: translate3d(0px, 0, 0);
     }
     100% { 
-        margin-left: 35px;
+        transform: translate3d(35px, 0, 0);
     }
 }
