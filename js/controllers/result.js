@@ -47,15 +47,11 @@ Result = (function() {
 
         if (id == null || id == 1) {
             sendGAEvent('Results: ' + data.results[0].name);
-            $('#result-template').tmpl(data.results[0]).appendTo('#results');
+            $('#result-template-mussel').tmpl(data.results[0]).appendTo('#results');
             $('#profile').attr('src', 'assets/images/profiles/1@2x.png');
             $('#animation').load('assets/animations/1.html', function() {
                 animationInit();
             });
-            setTimeout(function() {
-                fadeAnimation();
-            }, 8000);
-
         } else {
             sendGAEvent('Results: ' + data.results[id-1].name);
     	    $('#result-template').tmpl(data.results[id-1]).appendTo('#results');
